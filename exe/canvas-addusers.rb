@@ -102,7 +102,7 @@ def parse_cli
              display_help
            exit
            when "-c" || "--config"
-              @active_config = ARGV[0].strip().downcase()
+              @active_config = ARGV[0].strip()
            when "-f" || "--file"
               @file = ARGV[0].strip()
            when "-l" || "--list"
